@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "name": "tablib",
+  "version": "3.10.0",
+  "license": "MIT",
+  "repository_commit_reviewed": "b6a75dcbe01cc42b3fd45ae5005901e2639fa7a7",
+  "runtime_artifact": "vendor/tablib-3.10.0-py3-none-any.whl",
+  "sha256": "5721bf3a52d491f8f843628a3a3200db164f6ad9e92fb6eaa64dc3f945f30ad9",
+  "mandatory_runtime_dependencies": [],
+  "optional_extras_included": [],
+  "source": "https://pypi.org/pypi/tablib/3.10.0/json",
+  "note": "The released wheel and repository commit are separately identified; they are not assumed byte-identical."
+}

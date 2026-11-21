@@ -1,0 +1,18 @@
+CSV Handoff Preflight is an independent open source tool, not an official Jazzband,
+Tablib, OWASP or GitHub product. No endorsement or trademark license is claimed.
+
+Bundled runtime: Tablib 3.10.0, MIT License, unmodified wheel.
+https://github.com/jazzband/tablib
+https://pypi.org/project/tablib/3.10.0/
+Wheel SHA-256: 5721bf3a52d491f8f843628a3a3200db164f6ad9e92fb6eaa64dc3f945f30ad9
+The full original LICENSE and AUTHORS are retained inside the wheel and copied
+alongside it. Preserve both on redistribution, including binary distributions.
+No optional extras are included or installed. Wheel METADATA lists only optional
+extra dependencies. The selected CSV/HTML runtime needs Python's standard library.
+Build tools, optional Excel/YAML/Pandas dependencies and development/test tools
+are not part of this product runtime. Adding formats requires a new review.
+
+Original additions: handoff.py, tablib_runtime.py and examples.
+FormattedHTML is an opt-in compatibility adapter that changes export behavior;
+it does not modify or claim authorship of the upstream library.
+See tablib-html-formatters.patch for the proposed upstream source change.

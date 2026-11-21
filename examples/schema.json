@@ -1,0 +1,6 @@
+{
+  "headers": ["id", "name", "note"],
+  "key": "id",
+  "required": ["id", "name"],
+  "encoding": "utf-8-sig"
+}

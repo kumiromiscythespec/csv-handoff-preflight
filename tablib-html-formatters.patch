@@ -1,0 +1,13 @@
+--- a/src/tablib/formats/_html.py
++++ b/src/tablib/formats/_html.py
+@@ -29,7 +29,9 @@
+             table.append(head)
+ 
+         body = ET.Element('tbody')
+-        for row in dataset:
++        formatted = dataset._package(dicts=False)
++        rows = formatted[1:] if dataset.headers else formatted
++        for row in rows:
+             tr = ET.Element('tr')
+             for item in row:
+                 td = ET.Element('td')
