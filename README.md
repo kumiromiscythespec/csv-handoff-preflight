@@ -19,6 +19,12 @@ Tablib 3.10.0のHTML出力でformatterが無視される現象に対し、`tabli
 
 同梱のCSVは動作確認用サンプルです。実務で使うときは、取引先の列名に合うように `examples/schema.json` をコピーして編集してください。
 
+## 出荷CSVを納品明細にするとき
+
+同じ出荷の複数明細には、同じ出荷IDが入ります。出荷IDを `key` に指定すると、その繰り返しも重複として報告されます。元データに全行で一意の明細ID列がある場合は、その列を `key` に指定できます。
+
+帳票に移す前に、[出荷CSVチェックの架空データ](https://shipping-csv-preflight.crisp-llama-2628.chatgpt.site/?example=tsv#result-heading)で、`000017` と `17` を別の出荷IDとして扱う例を試せます。[納品明細Excelの試用案内](https://shipping-csv-preflight.crisp-llama-2628.chatgpt.site/template/)では、固定の架空明細でA4の印刷表示を確認できる無料XLSXと、手元のデータに使う500円の販売版を案内しています。
+
 TablibのMITライセンス、著作権表示、AUTHORSを保持しています。依存物・商標の扱いは`THIRD_PARTY_NOTICES.txt`と`dependency-lock.json`を参照してください。この試作はTablib/Jazzbandの公式製品ではありません。
 
 独自のコードはMITライセンスです。同梱のTablibには `vendor/TABLIB_LICENSE` の著作権表示とMITライセンスが適用されます。
